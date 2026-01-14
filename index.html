@@ -1,53 +1,97 @@
 <!DOCTYPE html>
 <html ng-app="portfolioApp">
-
-    <div ng-include="'header.html'"></div>
-    <div ng-controller="IndexController" ng-init="init()">
-        <div class="container-fluid main-content">
-            <div style="margin-top: 30rem;"></div>
-            <div class="row">
-                <div class="col text-center">
-                    <h2 class="text-white">JUST GAMING, CODING AND CREATING CONTENT</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col text-center">
-                    <p class="text-white">Welcome to my website!</p>
-                </div>
-            </div>
-            <div style="margin-top: 5rem;"></div>
-            <main role="main">
-                <div class="row">
-                    <div class="col">
-                        <div ng-hide="IsViewLevelEditorOff" class="content-container">
-                            <div class="header">The Level Editor</div>
-                            <div class="content">The Content</div>
-                        </div>
-                        <div ng-hide="IsViewDiscordBotOff" class="content-container">
-                            <div class="header">The Discord Bot</div>
-                            <div class="content">The Content</div>
-                        </div>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/site.css" />
+    </head>
+    <body ng-controller="HeaderController" ng-init="init()">
+        <header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">{{WebsiteName}}</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <!--<li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>-->
+                            <li class="nav-item">
+                                <a class="nav-link" ng-click="ShowViewLevelEditor()" href="#">Level Editor</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" ng-click="ShowViewDiscordBot()" href="#">Discord Bot</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                            </li>
+                        </ul>
+                        <!--<form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>-->
                     </div>
                 </div>
-            </main>
-        </div>
-        <footer class="border-top footer text-muted">
-            <div class="container-fluid">
-                <div style="height: 150px;"></div>
-                <div class="text-center">
-                    <h3>Contact</h3>
-                    <p>
-                        <a href="{{TwitchLink}}" target="_blank">Twitch</a>
-                    </p>
-                    <p>
-                        <a href="{{YouTubeLink}}" target="_blank">YouTube</a>
-                    </p>
+            </nav>
+        </header>
+        <div ng-controller="IndexController" ng-init="init()">
+            <div class="container-fluid main-content">
+                <div style="margin-top: 30rem;"></div>
+                <div class="row">
+                    <div class="col text-center">
+                        <h2 class="text-white">JUST GAMING, CODING AND CREATING CONTENT</h2>
+                    </div>
                 </div>
-                <div style="height: 150px;"></div>
+                <div class="row">
+                    <div class="col text-center">
+                        <p class="text-white">Welcome to my website!</p>
+                    </div>
+                </div>
+                <div style="margin-top: 5rem;"></div>
+                <main role="main">
+                    <div class="row">
+                        <div class="col">
+                            <div id="test" ng-hide="IsViewLevelEditorOff" class="content-container">
+                                <div class="header">The Level Editor</div>
+                                <div class="content">The Content</div>
+                            </div>
+                            <div ng-hide="IsViewDiscordBotOff" class="content-container">
+                                <div class="header">The Discord Bot</div>
+                                <div class="content">The Content</div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
             </div>
-        </footer>
-    </div>
-    
+            <footer class="border-top footer text-muted">
+                <div class="container-fluid">
+                    <div style="height: 150px;"></div>
+                    <div class="text-center">
+                        <h3>Contact</h3>
+                        <p>
+                            <a href="{{TwitchLink}}" target="_blank">Twitch</a>
+                        </p>
+                        <p>
+                            <a href="{{YouTubeLink}}" target="_blank">YouTube</a>
+                        </p>
+                    </div>
+                    <div style="height: 150px;"></div>
+                </div>
+            </footer>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
         <script src="css/bootstrap/js/bootstrap.bundle.min.js"></script>
         <script type="text/javascript" src="js/pages/main.js"></script>
