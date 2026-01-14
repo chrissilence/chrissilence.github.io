@@ -1,8 +1,19 @@
 <!DOCTYPE html>
 <html ng-app="portfolioApp">
     <head>
+        <meta charset="UTF-8" />
+	    <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name='robots' content='max-image-preview:large' />
         <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css" />
         <link rel="stylesheet" href="css/site.css" />
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.1/dist/chart.umd.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+        <script src="css/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="js/pages/main.js"></script>
+        <script type="text/javascript" src="js/pages/header.js"></script>
+        <script type="text/javascript" src="js/pages/index.js"></script>
+        <script type="text/javascript" src="js/site.js"></script>
     </head>
     <body ng-controller="HeaderController" ng-init="init()">
         <header>
@@ -46,35 +57,49 @@
                 </div>
             </nav>
         </header>
-        <div ng-controller="IndexController" ng-init="init()">
-            <div class="container-fluid main-content">
-                <div style="margin-top: 30rem;"></div>
-                <div class="row">
-                    <div class="col text-center">
-                        <h2 class="text-white">JUST GAMING, CODING AND CREATING CONTENT</h2>
+        <main role="main" ng-controller="IndexController" ng-init="init()">
+            <div class="main-content">
+                <div class="container-fluid">
+                    <div style="margin-top: 15rem;"></div>
+                    <div class="row">
+                        <div class="col text-center">
+                            <h2 class="text-white">JUST GAMING, CODING AND CREATING CONTENT</h2>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col text-center">
-                        <p class="text-white">Welcome to my website!</p>
+                    <div class="row">
+                        <div class="col text-center">
+                            <p class="text-white">Welcome to my website!</p>
+                        </div>
                     </div>
-                </div>
-                <div style="margin-top: 5rem;"></div>
-                <main role="main">
+                    <div style="margin-top: 3rem;"></div>
                     <div class="row">
                         <div class="col">
-                            <div id="test" ng-hide="IsViewLevelEditorOff" class="content-container">
-                                <div class="header">The Level Editor</div>
-                                <div class="content">The Content</div>
-                            </div>
-                            <div ng-hide="IsViewDiscordBotOff" class="content-container">
+                            <div id="ViewLevelEditor" ng-hide="IsViewLevelEditorOff" class="content-container"></div>
+                            <div id="ViewDiscordBot" ng-hide="IsViewDiscordBotOff" class="content-container">
                                 <div class="header">The Discord Bot</div>
                                 <div class="content">The Content</div>
                             </div>
                         </div>
                     </div>
-                </main>
-            </div>
+                        <!--<div class="row">
+                            <div class="col">
+                                <div class="content-container">
+                                    <div class="header">The Chart</div>
+                                    <div class="content">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <canvas id="chartOne"></canvas>
+                                            </div>
+                                            <div class="col-6">
+                                                <canvas id="chartTwo"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>-->
+                </div>
+            </main>
             <footer class="border-top footer text-muted">
                 <div class="container-fluid">
                     <div style="height: 150px;"></div>
@@ -91,12 +116,57 @@
                 </div>
             </footer>
         </div>
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
-        <script src="css/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script type="text/javascript" src="js/pages/main.js"></script>
-        <script type="text/javascript" src="js/pages/header.js"></script>
-        <script type="text/javascript" src="js/pages/index.js"></script>
-        <script type="text/javascript" src="js/site.js"></script>
     </body>
+    <!--<script>
+        const ctx = document.getElementById('chartOne');
+
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [12, 19, 3, 5, 2, 3],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+        const ctxTwo = document.getElementById('chartTwo');
+
+        new Chart(ctxTwo, {
+            type: 'doughnut',
+            data: {
+                labels: [
+                    'Red',
+                    'Blue',
+                    'Yellow'
+                ],
+                datasets: [{
+                    label: 'My First Dataset',
+                    data: [300, 50, 100],
+                    backgroundColor: [
+                        'rgb(255, 99, 132)',
+                        'rgb(54, 162, 235)',
+                        'rgb(255, 205, 86)'
+                    ],
+                    hoverOffset: 4
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>-->
 </html>
