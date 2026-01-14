@@ -15,9 +15,9 @@
            Portfolio.HeaderScope.IsViewLevelEditorOff = false;
            Portfolio.HeaderScope.IsViewDiscordBotOff = true;
 
-           $('#ViewLevelEditor').load('leveleditor.html', function() {
+          /* $('#ViewLevelEditor').load('leveleditor.html', function() {
                 
-           });
+           });*/
         };
 
         Portfolio.HeaderScope.ShowViewDiscordBot = function () {
