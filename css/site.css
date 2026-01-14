@@ -26,8 +26,8 @@ body {
 
 .navbar {
     background-color: #FFF;
-    box-shadow: 0px 0px 20px #AAA;
-    margin-bottom: 15px;
+    /*box-shadow: 0px 0px 20px #AAA;*/
+    /*margin-bottom: 15px;*/
     border-bottom: 0px !important;
 }
 
@@ -111,12 +111,23 @@ footer {
 * Content Container
 */
 
+.main-content {
+    padding-top: 15px;
+    padding-bottom:550px;
+    background-image:url('../images/site/bg.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .content-container {
     background-color: #FFF;
     border-radius: 5px;
-    box-shadow: 0px 5px 5px #AAA;
     margin-bottom: 15px;
+    /*box-shadow: 0px 5px 5px #AAA;*/
 }
+
+
 
 .content-container .header {
     font-weight: bold;
@@ -172,4 +183,12 @@ ol, ul {
 
 a {
     text-decoration: none;
+}
+
+/**
+    Other Attributes
+*/
+
+.box-shadow {
+    box-shadow: 0px 5px 5px #AAA;
 }

@@ -5,18 +5,18 @@
         <link rel="stylesheet" href="css/site.css" />
     </head>
     <body>
-        <header>
+        <header ng-controller="HeaderController" ng-init="init()">
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">ChrisSilence Portfolio</a>
+                    <a class="navbar-brand" href="#">{{WebsiteName}}</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
+                            <!--<li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
+                            </li>-->
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Level Editor</a>
                             </li>
@@ -43,65 +43,57 @@
                 </div>
             </nav>
         </header>
-        <div class="container-fluid">
-            <main role="main" class="pb-3">
-                <div ng-controller="IndexController" ng-init="init()">
-                    <div class="row mb-5">
+        <div ng-controller="IndexController" ng-init="init()">
+            <div class="container-fluid main-content">
+                <div style="margin-top: 30rem;"></div>
+                <div class="row">
+                    <div class="col text-center">
+                        <h2 class="text-white">JUST GAMING, CODING AND CREATING CONTENT</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center">
+                        <p class="text-white">Welcome to my website!</p>
+                    </div>
+                </div>
+                <div style="margin-top: 5rem;"></div>
+                <main role="main">
+                    <div class="row">
                         <div class="col">
-                            <div ng-hide="ViewLevelEditor" class="content-container">
-                                <div class="header">The Header</div>
+                            <div ng-hide="IsViewLevelEditorOff" class="content-container">
+                                <div class="header">The Level Editor</div>
+                                <div class="content">The Content</div>
+                            </div>
+                            <div ng-hide="IsViewDiscordBotOff" class="content-container">
+                                <div class="header">The Discord Bot</div>
                                 <div class="content">The Content</div>
                             </div>
                         </div>
                     </div>
-                    <div class="row mb-5">
-                        <div class="col">
-                            <div class="accordion" id="accordionExample">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        Accordion Item #1
-                                    </button>
-                                    </h2>
-                                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <strong>This is the first item’s accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                                    </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        Accordion Item #2
-                                    </button>
-                                    </h2>
-                                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                                    </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        Accordion Item #3
-                                    </button>
-                                    </h2>
-                                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                                    </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                </main>
+            </div>
+            <footer class="border-top footer text-muted">
+                <div class="container-fluid">
+                    <div style="height: 150px;"></div>
+                    <div class="text-center">
+                        <h3>Contact</h3>
+                        <p>
+                            <a href="{{TwitchLink}}" target="_blank">Twitch</a>
+                        </p>
+                        <p>
+                            <a href="{{YouTubeLink}}" target="_blank">YouTube</a>
+                        </p>
                     </div>
+                    <div style="height: 150px;"></div>
                 </div>
-            </main>
+            </footer>
         </div>
+        <div ng-include="'leveleditor.html'"></div>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
         <script src="css/bootstrap/js/bootstrap.bundle.min.js"></script>
         <script type="text/javascript" src="js/pages/main.js"></script>
+        <script type="text/javascript" src="js/pages/header.js"></script>
         <script type="text/javascript" src="js/pages/index.js"></script>
         <script type="text/javascript" src="js/site.js"></script>
     </body>
