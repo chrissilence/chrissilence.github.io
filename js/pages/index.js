@@ -15,7 +15,7 @@
            Portfolio.IndexScope.IsViewDiscordBotOff = true;
 
            
-            $.ajax({
+            /*$.ajax({
                 type: "GET",
                 dataType: "json",
                 url: "/Index?handler=GuildChannels",
@@ -29,7 +29,7 @@
                 error: function (error) {
                     alert(error);
                 }
-            });
+            });*/
  
         };
 
