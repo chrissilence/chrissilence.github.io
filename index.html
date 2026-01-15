@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html ng-app="portfolioApp">
     <head>
+        <title>ChrisSilence Portfolio</title>
         <meta charset="UTF-8" />
-	    <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name='robots' content='max-image-preview:large' />
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
         <link rel="stylesheet" href="css/site.css" />
         <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.1/dist/chart.umd.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
@@ -17,7 +18,7 @@
     </head>
     <body ng-controller="HeaderController" ng-init="init()">
         <header>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <nav id="nav" class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">{{WebsiteName}}</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,25 +30,23 @@
                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
                             </li>-->
                             <li class="nav-item">
-                                <a class="nav-link" ng-click="ShowViewLevelEditor()" href="#">Level Editor</a>
+                                <a class="nav-link" ng-click="ShowViewLevelEditor()" href="#ViewLevelEditor">Level Editor</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" ng-click="ShowViewDiscordBot()" href="#">Discord Bot</a>
+                                <a class="nav-link" ng-click="ShowViewDiscordBot()" href="#ViewDiscordBot">Discord Bot</a>
                             </li>
                             <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown
-                            </a>
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Content Creation</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" ng-click="ShowViewAdobe()" href="#ViewAdobe">Adobe</a></li>
+                                <li><a class="dropdown-item" href="#">Video Editing</a></li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                             </li>
-                            <li class="nav-item">
+                            <!--<li class="nav-item">
                                 <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                            </li>
+                            </li>-->
                         </ul>
                         <!--<form class="d-flex" role="search">
                             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
@@ -60,6 +59,24 @@
         <main role="main" ng-controller="IndexController" ng-init="init()">
             <div class="main-content">
                 <div class="container-fluid">
+                    <div class="row text-center">
+                        <div class="col-md-2 offset-md-10">
+                            <div class="row">
+                                <div class="col-3">
+                                    <a href="{{TwitchLink}}" target="_blank"><i class="bi bi-twitch bi-icon-attr"></i></a>
+                                </div>
+                                <div class="col-3">
+                                    <a href="{{YouTubeLink}}" target="_blank"><i class="bi bi-youtube bi-icon-attr"></i></a>
+                                </div>
+                                <div class="col-3">
+                                    <a href="{{TwitterLink}}" target="_blank"><i class="bi bi-twitter bi-icon-attr"></i></a>
+                                </div>
+                                <div class="col-3">
+                                    <a href="{{InstagramLink}}" target="_blank"><i class="bi bi-instagram bi-icon-attr"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div style="margin-top: 15rem;"></div>
                     <div class="row">
                         <div class="col text-center">
@@ -75,7 +92,16 @@
                     <div class="row">
                         <div class="col">
                             <div id="ViewLevelEditor" ng-hide="IsViewLevelEditorOff" class="content-container">
-                                                                <div class="header">THE LEVEL EDITOR</div>
+                                <div class="header">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h2 class="align-middle">THE LEVEL EDITOR</h2>
+                                        </div>
+                                        <div class="col text-end">
+                                            <a href="#nav"><i class="bi bi-arrow-up-square-fill bi-icon-attr"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="content">
                                     <div class="row">
                                         <div class="col">
@@ -153,7 +179,16 @@
                                 </div>
                             </div>
                             <div id="ViewDiscordBot" ng-hide="IsViewDiscordBotOff" class="content-container">
-                                <div class="header">THE DISCORD BOT</div>
+                                <div class="header">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h2>DISCORD BOT</h2>
+                                        </div>
+                                        <div class="col text-end">
+                                            <a href="#nav"><i class="bi bi-arrow-up-square-fill bi-icon-attr"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="content">
                                     <div class="row">
                                         <div class="col">
@@ -209,6 +244,81 @@
                                     </div>
                                 </div>
                             </div>
+                            <div id="ViewAdobe" ng-hide="IsViewAdobeOff" class="content-container">
+                                <div class="header">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h2>ADOBE AFTER EFFECTS & PHOTOSHOP</h2>
+                                        </div>
+                                        <div class="col text-end">
+                                            <a href="#nav"><i class="bi bi-arrow-up-square-fill bi-icon-attr"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h3>ABOUT</h3>
+                                        </div>
+                                        <div class="col-12">
+                                            <p>I have recently been working on developing artwork using Adobe Photoshop and After Effects to learn more about Adobe products. This range from static images to animated ones, particularly for my YouTube and Twitch streaming channels.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h3>DEVELOPER TOOLS</h3>
+                                            </div>
+                                            <div class="col-12">
+                                                <ul>
+                                                    <li>Adobe Photoshop</li>
+                                                    <li>Adobe After Effects</li>
+                                                </ul>  
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-2 text-center">
+                                            <img src="images/adobe/photoshop.png" />
+                                        </div>
+                                        <div class="col-md-6 mb-2 text-center">
+                                            <img src="images/adobe/aftereffects.png" />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-2">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <h3>AFTER EFFECTS</h3>
+                                                </div>
+                                                <div class="col-12">
+                                                    <p>Majority of my animations are done through After Effects! I create overlays for my Twitch and YouTube streaming channels to bring customization to my content.</p>
+                                                </div>
+                                                <div class="col-md-6 mb-2">
+                                                    <img src="images/adobe/christmas2025.gif" />
+                                                </div>
+                                                <div class="col-md-6 mb-2">
+                                                    <img src="images/adobe/winter2026.gif" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <h3>PHOTOSHOP</h3>
+                                                </div>
+                                                <div class="col-12">
+                                                    <p>I create various thumbnails and other images through Photoshop. My thumbnails are mostly used on my YouTube channel.</p>
+                                                </div>
+                                                <div class="col-12">
+                                                    <img src="images/adobe/thumbnail.jpg" />
+                                                </div>
+                                            </div>
+                                        </div>                                  
+
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!--<div class="row">
@@ -230,19 +340,28 @@
                     </div>-->
                 </div>
             </main>
-            <footer class="border-top footer text-muted">
+            <footer class="border-top footer text-muted" style="margin-top: 2.5rem;">
                 <div class="container-fluid">
-                    <div style="height: 150px;"></div>
-                    <div class="text-center">
-                        <h3>Contact</h3>
-                        <p>
-                            <a href="{{TwitchLink}}" target="_blank">Twitch</a>
-                        </p>
-                        <p>
-                            <a href="{{YouTubeLink}}" target="_blank">YouTube</a>
-                        </p>
+                    <div style="height: 10rem;"></div>
+                    <div class="row text-center">
+                        <div class="col-md-2 offset-md-10">
+                            <div class="row">
+                                <div class="col-3">
+                                    <a href="{{TwitchLink}}" target="_blank" style="font-size: 2.5rem; color: var(--bs-purple);"><i class="bi bi-twitch"></i></a>
+                                </div>
+                                <div class="col-3">
+                                    <a href="{{YouTubeLink}}" target="_blank" style="font-size: 2.5rem; color: var(--bs-red);"><i class="bi bi-youtube"></i></a>
+                                </div>
+                                <div class="col-3">
+                                    <a href="{{TwitterLink}}" target="_blank" style="font-size: 2.5rem; color: var(--bs-cyan);"><i class="bi bi-twitter"></i></a>
+                                </div>
+                                <div class="col-3">
+                                    <a href="{{InstagramLink}}" target="_blank" style="font-size: 2.5rem; color: var(--bs-pink);"><i class="bi bi-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div style="height: 150px;"></div>
+                    <div style="height: 10rem;"></div>
                 </div>
             </footer>
         </div>

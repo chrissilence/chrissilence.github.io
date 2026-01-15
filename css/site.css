@@ -1,13 +1,13 @@
-html {
-  font-size: 14px;
-}
-
+/*html {  
+   
+}*/
+/*
 @media (min-width: 768px) {
   html {
     font-size: 16px;
   }
 }
-
+*/
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
@@ -20,6 +20,9 @@ html {
 body {
   margin-bottom: 60px;
   background-color: #d5d5d5;
+  /*font-family:ui-sans-serif,system-ui,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';*/
+  -webkit-font-smoothing: antialiased; /* For WebKit browsers */
+  -moz-osx-font-smoothing: grayscale; /* For Firefox on macOS */
 }
 
 /* Header */
@@ -29,6 +32,7 @@ body {
     box-shadow: 0px 0px 20px #000;
     /*margin-bottom: 15px;*/
     border-bottom: 0px !important;
+ 
 }
 
 /* Footer */
@@ -198,8 +202,24 @@ a {
 */
 
 img {
+    padding: .25rem;
+    background-color: var(--bs-body-bg);
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
     max-width: 100%; 
-    border: 1px solid #666;
+    height: auto;
     box-shadow: 0px 5px 5px #AAA;
-    border-radius: 5px;
+}
+
+footer div:first-child {
+    max-width: 110rem;
+}
+
+/**
+    Icons
+*/
+
+.bi-icon-attr {
+    font-size: 2.5rem;
+    color: var(--bs-white);
 }
