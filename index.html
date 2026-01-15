@@ -20,7 +20,7 @@
         <header>
             <nav id="nav" class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">{{WebsiteName}}</a>
+                    <a class="navbar-brand" ng-click="ShowViewAbout()" href="#ViewAbout">{{WebsiteName}}</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
@@ -36,13 +36,20 @@
                                 <a class="nav-link" ng-click="ShowViewDiscordBot()" href="#ViewDiscordBot">Discord Bot</a>
                             </li>
                             <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Content Creation</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" ng-click="ShowViewAdobe()" href="#ViewAdobe">Adobe</a></li>
-                                <li><a class="dropdown-item" href="#">Video Editing</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Content Creation</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" ng-click="ShowViewAdobe()" href="#ViewAdobe">Adobe</a></li>
+                                    <li><a class="dropdown-item" ng-click="ShowViewVideoEditing()" href="#ViewVideoEditing">Video Editing</a></li>
+                                <!--<li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>-->
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Web Development</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" ng-click="ShowViewCagenix()" href="#ViewCagenix">Cagenix, Inc</a></li>
+                                    <li><a class="dropdown-item" ng-click="ShowViewGLSA()" href="#ViewGLSA">GLSA Website</a></li>
+                                </ul>
                             </li>
                             <!--<li class="nav-item">
                                 <a class="nav-link disabled" aria-disabled="true">Disabled</a>
@@ -78,7 +85,7 @@
                         </div>
                     </div>
                     <div style="margin-top: 15rem;"></div>
-                    <div class="row">
+                    <div id="ViewAbout" class="row">
                         <div class="col text-center">
                             <h2 class="text-white">JUST GAMING, CODING AND CREATING CONTENT</h2>
                         </div>
@@ -91,6 +98,21 @@
                     <div style="margin-top: 3rem;"></div>
                     <div class="row">
                         <div class="col">
+                            <div ng-hide="IsViewAboutOff" class="content-container-blank">
+                                <div class="content">
+                                    <div class="row">
+                                        <div class="col-md-6 mb-2 text-center">
+                                            <img src="images/about/me.jpg" style="max-width: 50%;" />
+                                        </div>
+                                        <div class="col-md-5 mb-2">
+                                            <p>I am a gamer, software developer and content creator. My journey started with learning the basics of web development, particularly HTML and then expanded onto PHP and MySQL. After high school, I went to college and studied Computer Science, graduating with a bachelor's degree. Professionally, I started writing code in .NET C# and Visual Basic. For fun, I enjoy streaming on Twitch and creating content on YouTube, primarily focusing on gaming and building a community.</p>
+                                        </div>
+                                        <div class="col-md-1 text-center">
+                                            <a href="#nav"><i class="bi bi-arrow-up-square-fill bi-icon-attr"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div id="ViewLevelEditor" ng-hide="IsViewLevelEditorOff" class="content-container">
                                 <div class="header">
                                     <div class="row">
@@ -124,14 +146,15 @@
                                                 <li>Visual Studio</li>
                                                 <li>C# .NET Windows Forms</li>
                                                 <li>C# .NET WPF</li>
+                                                <li>Notepad++</li>
                                             </ul>  
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-6 mb-2 text-center">
+                                        <div class="col-md-6 mb-2">
                                             <img src="images/leveleditor/mainwindow.png" />
                                         </div>
-                                        <div class="col-md-6 mb-2 text-center">
+                                        <div class="col-md-6 mb-2 ">
                                             <img src="images/leveleditor/grid.png" />
                                         </div>
                                     </div>
@@ -157,25 +180,31 @@
                                                 <div class="col-12">
                                                     <p>Sometimes, it's easy to develop levels that may feel easier or difficult than other levels. Because of this, I added a neat level swapper within the application!</p>
                                                 </div>
-                                                <div class="col-12">
+                                                <div class="col-12 text-end">
                                                     <img src="images/leveleditor/levelswapper.png" />
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+
                                     <div class="row">
-                                        <div class="col-12">
-                                            <h3>PALETTE EDITING</h3>
+                                        <div class="col-md-6 mb-2">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <h3>PALETTE EDITING</h3>
+                                                </div>
+                                                <div class="col-12">
+                                                    <p>The palette editor is designed in its own window. Like level data, I had to find the address for the palette within the file itself, so that I could manipulate the values through my windows form application and save it back into the file. This part of the project aids in making modification to the colors within the game.</p>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="col-12">
-                                            <p>The palette editor is designed in its own window. Like level data, I had to find the address for the palette within the file itself, so that I could manipulate the values through my windows form application and save it back into the file. This part of the project aids in making modification to the colors within the game.</p>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="text-center">
+                                        <div class="col-md-6">
+                                            <div class="col-12 text-end">
                                                 <img src="images/leveleditor/palette.png" />
                                             </div>
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
                             <div id="ViewDiscordBot" ng-hide="IsViewDiscordBotOff" class="content-container">
@@ -201,20 +230,27 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-12">
-                                            <h3>DEVELOPER TOOLS</h3>
+                                        <div class="col-md-4">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <h3>DEVELOPER TOOLS</h3>
+                                                </div>
+                                                <div class="col-12">
+                                                    <ul>
+                                                        <li>Visual Studio Code</li>
+                                                        <li>Node.js</li>
+                                                        <li>Discord API</li>
+                                                        <li>Discord</li>
+                                                        <li>Postman</li>
+                                                        <li>Command Prompt</li>
+                                                    </ul>  
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="col-12">
-                                            <ul>
-                                                <li>Visual Studio Code</li>
-                                                <li>Node.js</li>
-                                                <li>Discord API</li>
-                                            </ul>  
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-12 text-center">
-                                            <img src="images/discord/bot.jpg" />
+                                        <div class="col-md-8">
+                                            <div class="col-12 text-end">
+                                                <img src="images/discord/bot.jpg" />
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -232,14 +268,20 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-12">
-                                            <h3>OTHER DETAILS</h3>
+                                        <div class="col-md-6 mb-2">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <h3>OTHER DETAILS</h3>
+                                                </div>
+                                                <div class="col-12">
+                                                    <p>As I mentioned earlier, I've included pretty cool features into my bot, most notably the leveling system. You'll notice the red bar drawn on the canvas in the image below. You'll also see my current level as well. Other features I've included are badges, which would periodically be assigned based on special events or moments within the server.</p>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="col-12">
-                                            <p>As I mentioned earlier, I've included pretty cool features into my bot, most notably the leveling system. You'll notice the red bar drawn on the canvas in the image below. You'll also see my current level as well. Other features I've included are badges, which would periodically be assigned based on special events or moments within the server.</p>
-                                        </div>
-                                        <div class="col-12 text-center">
-                                            <img src="images/discord/canvas3.png" />
+                                        <div class="col-md-6">
+                                            <div class="col-12 text-end">
+                                                <img src="images/discord/canvas3.png" />
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -314,8 +356,183 @@
                                                     <img src="images/adobe/thumbnail.jpg" />
                                                 </div>
                                             </div>
-                                        </div>                                  
-
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="ViewVideoEditing" ng-hide="IsViewVideoEditingOff" class="content-container">
+                                <div class="header">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h2>VIDEO EDITING</h2>
+                                        </div>
+                                        <div class="col text-end">
+                                            <a href="#nav"><i class="bi bi-arrow-up-square-fill bi-icon-attr"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h3>ABOUT</h3>
+                                        </div>
+                                        <div class="col-12">
+                                            <p>Originally starting off with Sony Vegas, I experimented and started studying video editing. Eventually, I started using a free video editor called DaVinci Resolve. This is the MAIN tool that I currently use for my YouTube channel, which helps me with creating videos, small clips and highlights.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h3>DEVELOPER TOOLS</h3>
+                                            </div>
+                                            <div class="col-12">
+                                                <ul>
+                                                    <li>Sony Vegas</li>
+                                                    <li>DaVinci Resolve</li>
+                                                </ul>  
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-2">
+                                            <img src="images/davinci/davinci1.jpg" />
+                                        </div>
+                                        <div class="col-md-6 mb-2">
+                                            <img src="images/davinci/davinci2.jpg" />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h3>YOUTUBE</h3>
+                                        </div>
+                                        <div class="col-12">
+                                            <p>Once I have created my video, I would then create a thumbnail for the video and upload the content onto my YouTube channel.</p>
+                                        </div>
+                                        <div class="col-12 text-center">
+                                            <img src="images/davinci/yt.jpg" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="ViewCagenix" ng-hide="IsViewCagenixOff" class="content-container">
+                                <div class="header">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h2>CAGENIX, INC</h2>
+                                        </div>
+                                        <div class="col text-end">
+                                            <a href="#nav"><i class="bi bi-arrow-up-square-fill bi-icon-attr"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h3>ABOUT</h3>
+                                        </div>
+                                        <div class="col-12">
+                                            <p>The main focus at Cagenix is on dental work. Professionally, I worked closely with them on their main website, and their backend website as well.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <h3>DEVELOPER TOOLS</h3>
+                                                </div>
+                                                <div class="col-12">
+                                                    <ul>
+                                                        <li>Visual Studio</li>
+                                                        <li>Microsoft SQL Server Management Studio</li>
+                                                        <li>.NET C#</li>
+                                                        <li>Bootstrap</li>
+                                                        <li>HTML</li>
+                                                        <li>CSS</li>
+                                                        <li>Javascript</li>
+                                                        <li>Google Chrome</li>
+                                                        <li>Google Debugger</li>
+                                                    </ul>  
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="col-12 text-end">
+                                                <img src="images/cagenix/cagenix1.jpg" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h3>RESOURCE MANAGEMENT</h3>
+                                        </div>
+                                        <div class="col-12">
+                                            <p>The main concern with this website were issues with performance. This included assets and fonts that may have been taking quite a while to load onto a specific page, which is very concerning, especially for our mobile users. As a result, I was tasked with working on various existing pages and making sure content was loading appropriately.</p>
+                                            <p>I utilized the Google Debugger to aid in this task. Using the Network tab, I was able to check to see which assets were loading into a view, but also check to see how long it would take AND also file sizes.</p>
+                                            <p>Any JavaScript or console errors, I would also address as well.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-2">
+                                            <img src="images/cagenix/cagenix2.jpg" />
+                                        </div>
+                                        <div class="col-md-6 mb-2">
+                                            <img src="images/cagenix/cagenix3.jpg" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="ViewGLSA" ng-hide="IsViewGLSAOff" class="content-container">
+                                <div class="header">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h2>GLSA WEBSITE</h2>
+                                        </div>
+                                        <div class="col text-end">
+                                            <a href="#nav"><i class="bi bi-arrow-up-square-fill bi-icon-attr"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h3>ABOUT</h3>
+                                        </div>
+                                        <div class="col-12">
+                                            <p>This is one of the very first web development projects I worked on in college! My love for XML started with the SPSU GLSA project. This project is a small web application that is designed for the GLSA at SPSU to provide information regarding general updates and events with the club. They helped me host the website on their servers, and I would periodically provide updates.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                                <div class="col-12">
+                                                    <h3>DEVELOPER TOOLS</h3>
+                                                </div>
+                                                <div class="col-12">
+                                                    <ul>
+                                                        <li>HTML</li>
+                                                        <li>CSS</li>
+                                                        <li>Javascript</li>
+                                                        <li>XML</li>
+                                                        <li>Notepad++</li>
+                                                        <li>Facebook Debugger (For creating a LIKE button)</li>
+                                                    </ul>  
+                                                </div>
+                                            </div>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-2">
+                                            <img src="images/glsa/glsa1.jpg" />
+                                        </div>
+                                        <div class="col-md-6 mb-2">
+                                            <img src="images/glsa/glsa2.jpg" />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h3>HOW IT WORKS</h3>
+                                        </div>
+                                        <div class="col-12">
+                                            <p>The crazy cool thing about this website is that it is where I started learning and utilizing XML and JQUERY. The cooler part comes when I use JavaScript to READ this XML document. Once the XML document is opened, the entries are read and from there it spits out HTML that creates the entries on the main page.</p>
+                                            <p>For example, this is the “About” section. I created an XML document that holds each entry, and then using JavaScript, I read the document. As each entry is read, HTML is appended and saved into a variable. Once the entries are all read, the HTML is then created on the web page itself.</p>
+                                            <p>This application is very simple, but effective in that I didn’t have a database system to work with, so I figured I’d use XML instead. The site also used JQUERY for a few animations, such as showing and hiding certain elements, as you can see from the screenshots provided.</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
