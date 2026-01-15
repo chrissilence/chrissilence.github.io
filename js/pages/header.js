@@ -16,6 +16,7 @@
         Portfolio.HeaderScope.IsViewVideoEditingOff = true;
         Portfolio.HeaderScope.IsViewCagenixOff = true;
         Portfolio.HeaderScope.IsViewGLSAOff = true;
+        Portfolio.HeaderScope.IsViewTheNewOff = true;
 
         Portfolio.HeaderScope.init = function () {
             Portfolio.HeaderScope.ShowViewAbout();
@@ -31,6 +32,7 @@
            Portfolio.HeaderScope.IsViewVideoEditingOff = true;
            Portfolio.HeaderScope.IsViewCagenixOff = true;
            Portfolio.HeaderScope.IsViewGLSAOff = true;
+           Portfolio.HeaderScope.IsViewTheNewOff = true;
         };
 
         Portfolio.HeaderScope.ShowViewLevelEditor = function () {
@@ -41,6 +43,7 @@
            Portfolio.HeaderScope.IsViewVideoEditingOff = true;
            Portfolio.HeaderScope.IsViewCagenixOff = true;
            Portfolio.HeaderScope.IsViewGLSAOff = true;
+           Portfolio.HeaderScope.IsViewTheNewOff = true;
 
           /* $('#ViewLevelEditor').load('leveleditor.html', function() {
                 
@@ -55,6 +58,7 @@
            Portfolio.HeaderScope.IsViewVideoEditingOff = true;
            Portfolio.HeaderScope.IsViewCagenixOff = true;
            Portfolio.HeaderScope.IsViewGLSAOff = true;
+           Portfolio.HeaderScope.IsViewTheNewOff = true;
         };
 
         Portfolio.HeaderScope.ShowViewAdobe = function() {
@@ -65,6 +69,7 @@
            Portfolio.HeaderScope.IsViewVideoEditingOff = true;
            Portfolio.HeaderScope.IsViewCagenixOff = true;
            Portfolio.HeaderScope.IsViewGLSAOff = true;
+           Portfolio.HeaderScope.IsViewTheNewOff = true;
         }
 
         Portfolio.HeaderScope.ShowViewVideoEditing = function() {
@@ -75,6 +80,7 @@
            Portfolio.HeaderScope.IsViewVideoEditingOff = false;
            Portfolio.HeaderScope.IsViewCagenixOff = true;
            Portfolio.HeaderScope.IsViewGLSAOff = true;
+           Portfolio.HeaderScope.IsViewTheNewOff = true;
         }
 
         Portfolio.HeaderScope.ShowViewCagenix = function() {
@@ -85,6 +91,7 @@
            Portfolio.HeaderScope.IsViewVideoEditingOff = true;
            Portfolio.HeaderScope.IsViewCagenixOff = false;
            Portfolio.HeaderScope.IsViewGLSAOff = true;
+           Portfolio.HeaderScope.IsViewTheNewOff = true;
         }
 
         Portfolio.HeaderScope.ShowViewGLSA = function() {
@@ -95,6 +102,18 @@
            Portfolio.HeaderScope.IsViewVideoEditingOff = true;
            Portfolio.HeaderScope.IsViewCagenixOff = true;
            Portfolio.HeaderScope.IsViewGLSAOff = false;
+           Portfolio.HeaderScope.IsViewTheNewOff = true;
+        }
+
+        Portfolio.HeaderScope.ShowViewTheNew = function() {
+            Portfolio.HeaderScope.IsViewAboutOff = true;
+           Portfolio.HeaderScope.IsViewLevelEditorOff = true;
+           Portfolio.HeaderScope.IsViewDiscordBotOff = true;
+           Portfolio.HeaderScope.IsViewAdobeOff = true;
+           Portfolio.HeaderScope.IsViewVideoEditingOff = true;
+           Portfolio.HeaderScope.IsViewCagenixOff = true;
+           Portfolio.HeaderScope.IsViewGLSAOff = true;
+           Portfolio.HeaderScope.IsViewTheNewOff = false;
         }
     });
 })();

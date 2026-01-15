@@ -229,6 +229,10 @@ footer div:first-child {
     Media Queries
 */
 
+.about {
+    font-size: 1.08rem;
+}
+
 @media screen and (max-width: 767px) {
   .about {
     margin-top: 1rem;

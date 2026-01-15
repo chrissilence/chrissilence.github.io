@@ -47,8 +47,10 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Web Development</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" ng-click="ShowViewCagenix()" href="#ViewCagenix">Cagenix, Inc</a></li>
+                                    <li><a class="dropdown-item" ng-click="ShowViewTheNew()" href="#ViewTheNew">The New</a></li>
                                     <li><a class="dropdown-item" ng-click="ShowViewGLSA()" href="#ViewGLSA">GLSA Website</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" ng-click="ShowViewCagenix()" href="#ViewCagenix">Cagenix, Inc</a></li>
                                 </ul>
                             </li>
                             <!--<li class="nav-item">
@@ -104,11 +106,8 @@
                                         <div class="col-md-6 mb-2 text-center">
                                             <img src="images/about/me.jpg" style="max-width: 50%;" />
                                         </div>
-                                        <div class="col-md-5 mb-2">
+                                        <div class="col-md-6 mb-2">
                                             <p class="about">I am a gamer, software developer and content creator. My journey started with learning the basics of web development, particularly HTML and then expanded onto PHP and MySQL. After high school, I went to college and studied Computer Science, graduating with a bachelor's degree. Professionally, I started writing code in .NET C# and Visual Basic. For fun, I enjoy streaming on Twitch and creating content on YouTube, primarily focusing on gaming and building a community.</p>
-                                        </div>
-                                        <div class="col-md-1 text-center">
-                                            <a href="#nav"><i class="bi bi-arrow-up-square-fill bi-icon-attr"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -524,6 +523,137 @@
                                             <p>The crazy cool thing about this website is that it is where I started learning and utilizing XML and JQUERY. The cooler part comes when I use JavaScript to READ this XML document. Once the XML document is opened, the entries are read and from there it spits out HTML that creates the entries on the main page.</p>
                                             <p>For example, this is the “About” section. I created an XML document that holds each entry, and then using JavaScript, I read the document. As each entry is read, HTML is appended and saved into a variable. Once the entries are all read, the HTML is then created on the web page itself.</p>
                                             <p>This application is very simple, but effective in that I didn’t have a database system to work with, so I figured I’d use XML instead. The site also used JQUERY for a few animations, such as showing and hiding certain elements, as you can see from the screenshots provided.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="ViewTheNew" ng-hide="IsViewTheNewOff" class="content-container">
+                                <div class="header">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h2>The New</h2>
+                                        </div>
+                                        <div class="col text-end">
+                                            <a href="#nav"><i class="bi bi-arrow-up-square-fill bi-icon-attr"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="row mb-2">
+                                        <div class="col-12">
+                                            <h3>ABOUT</h3>
+                                        </div>
+                                        <div class="col-12">
+                                            <p>This is the <b>VERY FIRST</b> web development project I've <b>EVER</b> worked on. The New is my baby. The primary focus behind this website was to design a message board system where users could interact with each other.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-xl-4">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <h3>DEVELOPER TOOLS</h3>
+                                                </div>
+                                                <div class="col-12">
+                                                    <ul>
+                                                        <li>HTML</li>
+                                                        <li>CSS</li>
+                                                        <li>Javascript</li>
+                                                        <li>PHP</li>
+                                                        <li>Notepad++</li>
+                                                        <li>Wampserver</li>
+                                                        <li>phpMyAdmin</li>
+                                                        <li>MySQL</li>
+                                                    </ul>  
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-8">
+                                            <div class="col-12">
+                                                <img src="images/thenew/thenew.jpg" /> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-xl-4">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <h3>WAMPSERVER</h3>
+                                                </div>
+                                                <div class="col-12">
+                                                    <p>A server is needed in order to run this web application. I decided to use Wampserver, which comes with Apache, PHP and MySQL installed. This allows me to set up my database and website!</p> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-8">
+                                            <div class="col-12">
+                                                <img src="images/thenew/wampserver.jpg" /> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-12">
+                                            <h3>THE DATABASE</h3>
+                                        </div>
+                                        <div class="col-12">
+                                            <p>Once Wampserver is up and running, I can now design my database and have it run through phpMyAdmin. SQL database knowledge is heavily required, but you can also use the UI to create tables and entries as well. On the left is the database structure for my website, and on the right is the database entries for my forums.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-xl-6 mb-2">
+                                            <img src="images/thenew/phpmyadmin.jpg" />
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <img src="images/thenew/phpmyadmin2.jpg" />
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-xl-4">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <h3>REGISTRATION AND LOGIN</h3>
+                                                </div>
+                                                <div class="col-12">
+                                                    <p>Before guests are able to post information on the website, they are required to register and login. For registration, a username and password are required. Gender must also be specified as well. For login, username and password are required.</p> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-8">
+                                            <div class="row">
+                                                <div class="col-xl-6 mb-2">
+                                                    <img src="images/thenew/thenew4.jpg" /> 
+                                                </div>
+                                                <div class="col-xl-6">
+                                                    <img src="images/thenew/thenew5.jpg" /> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xl-6 mb-2">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <h3>MEMBERS</h3>
+                                                </div>
+                                                <div class="col-12">
+                                                    <p>Any registered members on the website are listed in its own page, which features page navigation! The color codes on each name have a meaning, indicating if they're a member, or a server moderator, or a server admin.</p>
+                                                </div>
+                                                <div class="col-12">
+                                                    <img src="images/thenew/thenew2.jpg" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <h3>MEMBER DETAILS</h3>
+                                                </div>
+                                                <div class="col-12">
+                                                    <p>From the member list, you can view specific details about server members as well, such as their profile picture, post layouts, number of posts and threads, email and other goodies!</p>
+                                                </div>
+                                                <div class="col-12">
+                                                    <img src="images/thenew/thenew3.jpg" />
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
