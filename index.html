@@ -66,619 +66,618 @@
             </nav>
         </header>
         <main role="main" ng-controller="IndexController" ng-init="init()">
-            <div class="main-content">
-                <div class="container-fluid">
-                    <div class="row text-center">
-                        <div class="col-md-4 offset-md-8">
-                            <div class="row">
-                                <div class="col">
-                                    <a href="{{TwitchLink}}" target="_blank"><i class="bi bi-twitch bi-icon-attr"></i></a>
-                                </div>
-                                <div class="col">
-                                    <a href="{{YouTubeLink}}" target="_blank"><i class="bi bi-youtube bi-icon-attr"></i></a>
-                                </div>
-                                <div class="col">
-                                    <a href="{{TwitterLink}}" target="_blank"><i class="bi bi-twitter bi-icon-attr"></i></a>
-                                </div>
-                                <div class="col">
-                                    <a href="{{InstagramLink}}" target="_blank"><i class="bi bi-instagram bi-icon-attr"></i></a>
-                                </div>
-                                <div class="col">
-                                    <a href="{{TikTokLink}}" target="_blank"><i class="bi bi-tiktok bi-icon-attr"></i></a>
-                                </div>
+        <div class="main-content">
+            <div class="container-fluid">
+                <div class="row text-center">
+                    <div class="col-md-4 offset-md-8">
+                        <div class="row">
+                            <div class="col">
+                                <a href="{{TwitchLink}}" target="_blank"><i class="bi bi-twitch bi-icon-attr"></i></a>
+                            </div>
+                            <div class="col">
+                                <a href="{{YouTubeLink}}" target="_blank"><i class="bi bi-youtube bi-icon-attr"></i></a>
+                            </div>
+                            <div class="col">
+                                <a href="{{TwitterLink}}" target="_blank"><i class="bi bi-twitter bi-icon-attr"></i></a>
+                            </div>
+                            <div class="col">
+                                <a href="{{InstagramLink}}" target="_blank"><i class="bi bi-instagram bi-icon-attr"></i></a>
+                            </div>
+                            <div class="col">
+                                <a href="{{TikTokLink}}" target="_blank"><i class="bi bi-tiktok bi-icon-attr"></i></a>
                             </div>
                         </div>
                     </div>
-                    <div style="margin-top: 15rem;"></div>
-                    <div id="ViewAbout" class="row">
-                        <div class="col text-center">
-                            <h2 class="text-white">JUST GAMING, CODING AND CREATING CONTENT</h2>
-                        </div>
+                </div>
+                <div style="margin-top: 15rem;"></div>
+                <div id="ViewAbout" class="row">
+                    <div class="col text-center">
+                        <h2 class="text-white">JUST GAMING, CODING AND CREATING CONTENT</h2>
                     </div>
-                    <div class="row">
-                        <div class="col text-center">
-                            <p class="text-white">Welcome to my website!</p>
-                        </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center">
+                        <p class="text-white">Welcome to my website!</p>
                     </div>
-                    <div style="margin-top: 3rem;"></div>
-                    <div class="row">
-                        <div class="col">
-                            <div ng-hide="IsViewAboutOff" class="content-container-blank">
-                                <div class="content">
-                                    <div class="row">
-                                        <div class="col-md-6 mb-2 text-center">
-                                            <img src="images/about/me.jpg" style="max-width: 50%;" />
+                </div>
+                <div style="margin-top: 3rem;"></div>
+                <div class="row">
+                    <div class="col">
+                        <div ng-hide="IsViewAboutOff" class="content-container-blank">
+                            <div class="content">
+                                <div class="row">
+                                    <div class="col-md-6 mb-2 text-center">
+                                        <img src="images/about/me.jpg" style="max-width: 50%;" />
+                                    </div>
+                                    <div class="col-md-6 mb-2">
+                                        <p class="about">I am a gamer, software developer and content creator. My journey started with learning the basics of web development, particularly HTML and then expanded onto PHP and MySQL. After high school, I went to college and studied Computer Science, graduating with a bachelor's degree. Professionally, I started writing code in .NET C# and Visual Basic. For fun, I enjoy streaming on Twitch and creating content on YouTube, primarily focusing on gaming and building a community.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="ViewLevelEditor" ng-hide="IsViewLevelEditorOff" class="content-container">
+                            <div class="header">
+                                <div class="row">
+                                    <div class="col">
+                                        <h2 class="align-middle">THE LEVEL EDITOR</h2>
+                                    </div>
+                                    <div class="col text-end">
+                                        <a href="#nav"><i class="bi bi-arrow-up-square-fill bi-icon-attr"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="row mb-2">
+                                    <div class="col-12">
+                                        <h3>ABOUT</h3>
+                                    </div>
+                                    <div class="col-12">
+                                        <p>This is one of the BIGGEST side projects I’ve worked on. This is a application that I wrote in attempt to learn more about file handling and modification. The general idea is to modify an existing video game. I've also included features such as a grid system, level swapping, statistics and tile data.</p>
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="row mb-2">
+                                    <div class="col-12">
+                                        <h3>DEVELOPER TOOLS</h3>
+                                    </div>
+                                    <div class="col-12">
+                                        <ul>
+                                            <li>Visual Studio</li>
+                                            <li>C# .NET Windows Forms</li>
+                                            <li>C# .NET WPF</li>
+                                            <li>Notepad++</li>
+                                        </ul>  
+                                    </div>
+                                </div>
+                                <div class="row mb-2 text-center">
+                                    <div class="col-xl-6 mb-2">
+                                        <img src="images/leveleditor/mainwindow.png" />
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <img src="images/leveleditor/grid.png" />
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="row mb-2">
+                                    <div class="col-xl-6 mb-2">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h3>HEX EDITING</h3>
+                                            </div>
+                                            <div class="col-12">
+                                                <p>On a very technical level, this is what modifying the file would look like. I can understand what this is saying, but someone else may not. We are looking at one of the levels, in this case. Instead of making modifications to this level through hex, I decided to write an application that would visualize the data instead.</p>
+                                            </div>
+                                            <div class="col-12 text-center">
+                                                <img src="images/leveleditor/hex.png" />
+                                            </div>
                                         </div>
-                                        <div class="col-md-6 mb-2">
-                                            <p class="about">I am a gamer, software developer and content creator. My journey started with learning the basics of web development, particularly HTML and then expanded onto PHP and MySQL. After high school, I went to college and studied Computer Science, graduating with a bachelor's degree. Professionally, I started writing code in .NET C# and Visual Basic. For fun, I enjoy streaming on Twitch and creating content on YouTube, primarily focusing on gaming and building a community.</p>
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h3>LEVEL SWAPPER</h3>
+                                            </div>
+                                            <div class="col-12">
+                                                <p>Sometimes, it's easy to develop levels that may feel easier or difficult than other levels. Because of this, I added a neat level swapper within the application!</p>
+                                            </div>
+                                            <div class="col-12 text-center">
+                                                <img src="images/leveleditor/levelswapper.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="row">
+                                    <div class="col-xl-6">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h3>PALETTE EDITING</h3>
+                                            </div>
+                                            <div class="col-12">
+                                                <p>The palette editor is designed in its own window. Like level data, I had to find the address for the palette within the file itself, so that I could manipulate the values through my windows form application and save it back into the file. This part of the project aids in making modification to the colors within the game.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <div class="col-12 text-center">
+                                            <img src="images/leveleditor/palette.png" />
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div id="ViewLevelEditor" ng-hide="IsViewLevelEditorOff" class="content-container">
-                                <div class="header">
-                                    <div class="row">
-                                        <div class="col">
-                                            <h2 class="align-middle">THE LEVEL EDITOR</h2>
+                        </div>
+                        <div id="ViewDiscordBot" ng-hide="IsViewDiscordBotOff" class="content-container">
+                            <div class="header">
+                                <div class="row">
+                                    <div class="col">
+                                        <h2>DISCORD BOT</h2>
+                                    </div>
+                                    <div class="col text-end">
+                                        <a href="#nav"><i class="bi bi-arrow-up-square-fill bi-icon-attr"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="row mb-2">
+                                    <div class="col-12">
+                                        <h3>ABOUT</h3>
+                                    </div>
+                                    <div class="col-12">
+                                        <p>I found myself heavily interested in learning more about API endpoints. Discord API is one of the craziest side projects I've gotten myself into. The idea is to create a single page application AND a bot in my Discord server!</p>
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="row mb-2">
+                                    <div class="col-xl-4">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h3>DEVELOPER TOOLS</h3>
+                                            </div>
+                                            <div class="col-12">
+                                                <ul>
+                                                    <li>Visual Studio Code</li>
+                                                    <li>Node.js</li>
+                                                    <li>Discord API</li>
+                                                    <li>Discord</li>
+                                                    <li>Postman</li>
+                                                    <li>Command Prompt</li>
+                                                </ul>  
+                                            </div>
                                         </div>
-                                        <div class="col text-end">
-                                            <a href="#nav"><i class="bi bi-arrow-up-square-fill bi-icon-attr"></i></a>
+                                    </div>
+                                    <div class="col-xl-8">
+                                        <div class="col-12 text-center">
+                                            <img src="images/discord/bot.jpg" />
                                         </div>
                                     </div>
                                 </div>
-                                <div class="content">
-                                    <div class="row mb-2">
-                                        <div class="col-12">
-                                            <h3>ABOUT</h3>
-                                        </div>
-                                        <div class="col-12">
-                                            <p>This is one of the BIGGEST side projects I’ve worked on. This is a application that I wrote in attempt to learn more about file handling and modification. The general idea is to modify an existing video game. I've also included features such as a grid system, level swapping, statistics and tile data.</p>
+                                <hr />
+                                <div class="row mb-2">
+                                    <div class="col-12">
+                                        <h3>DRAWING CANVAS</h3>
+                                    </div>
+                                    <div class="col-12">
+                                        <p>From here, things get a lot more … technical. I started learning about Node.js and decided to create a Discord bot. This bot will be used within my discord server by any of my users in attempt to obtain information related to their profile. I started off by drawing a canvas. This canvas will hold any user information on it, such as their username, the date in which they joined the server, picture and avatar. I also implemented a fun leveling system!</p>
+                                    </div>
+                                    <div class="col-xl-6 mb-2 text-center">
+                                        <img src="images/discord/canvas.png" />
+                                    </div>
+                                    <div class="col-xl-6 mb-2 text-center">
+                                        <img src="images/discord/canvas2.png" />
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="row">
+                                    <div class="col-xl-6">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h3>OTHER DETAILS</h3>
+                                            </div>
+                                            <div class="col-12">
+                                                <p>As I mentioned earlier, I've included pretty cool features into my bot, most notably the leveling system. You'll notice the red bar drawn on the canvas in the image below. You'll also see my current level as well. Other features I've included are badges, which would periodically be assigned based on special events or moments within the server.</p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <hr />
-                                    <div class="row mb-2">
+                                    <div class="col-xl-6">
+                                        <div class="col-12 text-center">
+                                            <img src="images/discord/canvas3.png" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="ViewAdobe" ng-hide="IsViewAdobeOff" class="content-container">
+                            <div class="header">
+                                <div class="row">
+                                    <div class="col">
+                                        <h2>ADOBE AFTER EFFECTS & PHOTOSHOP</h2>
+                                    </div>
+                                    <div class="col text-end">
+                                        <a href="#nav"><i class="bi bi-arrow-up-square-fill bi-icon-attr"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content">            
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h3>ABOUT</h3>
+                                    </div>
+                                    <div class="col-12">
+                                        <p>I have recently been working on developing artwork using Adobe Photoshop and After Effects to learn more about Adobe products. This range from static images to animated ones, particularly for my YouTube and Twitch streaming channels.</p>
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="row">
+                                    <div class="row">
                                         <div class="col-12">
                                             <h3>DEVELOPER TOOLS</h3>
                                         </div>
                                         <div class="col-12">
                                             <ul>
-                                                <li>Visual Studio</li>
-                                                <li>C# .NET Windows Forms</li>
-                                                <li>C# .NET WPF</li>
-                                                <li>Notepad++</li>
+                                                <li>Adobe Photoshop</li>
+                                                <li>Adobe After Effects</li>
+                                                <li>Paint.Net</li>
                                             </ul>  
                                         </div>
                                     </div>
-                                    <div class="row mb-2 text-center">
-                                        <div class="col-xl-6 mb-2">
-                                            <img src="images/leveleditor/mainwindow.png" />
-                                        </div>
-                                        <div class="col-xl-6">
-                                            <img src="images/leveleditor/grid.png" />
-                                        </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xl-6 mb-2 text-center">
+                                        <img src="images/adobe/photoshop.png" />
                                     </div>
-                                    <hr />
-                                    <div class="row mb-2">
-                                        <div class="col-xl-6 mb-2">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <h3>HEX EDITING</h3>
-                                                </div>
-                                                <div class="col-12">
-                                                    <p>On a very technical level, this is what modifying the file would look like. I can understand what this is saying, but someone else may not. We are looking at one of the levels, in this case. Instead of making modifications to this level through hex, I decided to write an application that would visualize the data instead.</p>
-                                                </div>
-                                                <div class="col-12 text-center">
-                                                    <img src="images/leveleditor/hex.png" />
-                                                </div>
+                                    <div class="col-xl-6 mb-2 text-center">
+                                        <img src="images/adobe/aftereffects.png" />
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="row">
+                                    <div class="col-xl-6 mb-2">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h3>AFTER EFFECTS</h3>
                                             </div>
-                                        </div>
-                                        <div class="col-xl-6">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <h3>LEVEL SWAPPER</h3>
-                                                </div>
-                                                <div class="col-12">
-                                                    <p>Sometimes, it's easy to develop levels that may feel easier or difficult than other levels. Because of this, I added a neat level swapper within the application!</p>
-                                                </div>
-                                                <div class="col-12 text-center">
-                                                    <img src="images/leveleditor/levelswapper.png" />
-                                                </div>
+                                            <div class="col-12">
+                                                <p>Majority of my animations are done through After Effects! I create overlays for my Twitch and YouTube streaming channels to bring customization to my content.</p>
+                                            </div>
+                                            <div class="col-md-6 mb-2 text-center">
+                                                <img src="images/adobe/christmas2025.gif" />
+                                            </div>
+                                            <div class="col-md-6 mb-2 text-center">
+                                                <img src="images/adobe/winter2026.gif" />
                                             </div>
                                         </div>
                                     </div>
-                                    <hr />
-                                    <div class="row">
-                                        <div class="col-xl-6">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <h3>PALETTE EDITING</h3>
-                                                </div>
-                                                <div class="col-12">
-                                                    <p>The palette editor is designed in its own window. Like level data, I had to find the address for the palette within the file itself, so that I could manipulate the values through my windows form application and save it back into the file. This part of the project aids in making modification to the colors within the game.</p>
-                                                </div>
+                                    <div class="col-xl-6">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h3>PHOTOSHOP</h3>
                                             </div>
-                                        </div>
-                                        <div class="col-xl-6">
-                                            <div class="col-12 text-center">
-                                                <img src="images/leveleditor/palette.png" />
+                                            <div class="col-12">
+                                                <p>I create various thumbnails and other images through Photoshop. My thumbnails are mostly used on my YouTube channel.</p>
+                                            </div>
+                                            <div class="col-12">
+                                                <img src="images/adobe/thumbnail.jpg" />
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div id="ViewDiscordBot" ng-hide="IsViewDiscordBotOff" class="content-container">
-                                <div class="header">
-                                    <div class="row">
-                                        <div class="col">
-                                            <h2>DISCORD BOT</h2>
-                                        </div>
-                                        <div class="col text-end">
-                                            <a href="#nav"><i class="bi bi-arrow-up-square-fill bi-icon-attr"></i></a>
-                                        </div>
+                        </div>
+                        <div id="ViewVideoEditing" ng-hide="IsViewVideoEditingOff" class="content-container">
+                            <div class="header">
+                                <div class="row">
+                                    <div class="col">
+                                        <h2>VIDEO EDITING</h2>
                                     </div>
-                                </div>
-                                <div class="content">
-                                    <div class="row mb-2">
-                                        <div class="col-12">
-                                            <h3>ABOUT</h3>
-                                        </div>
-                                        <div class="col-12">
-                                            <p>I found myself heavily interested in learning more about API endpoints. Discord API is one of the craziest side projects I've gotten myself into. The idea is to create a single page application AND a bot in my Discord server!</p>
-                                        </div>
-                                    </div>
-                                    <hr />
-                                    <div class="row mb-2">
-                                        <div class="col-xl-4">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <h3>DEVELOPER TOOLS</h3>
-                                                </div>
-                                                <div class="col-12">
-                                                    <ul>
-                                                        <li>Visual Studio Code</li>
-                                                        <li>Node.js</li>
-                                                        <li>Discord API</li>
-                                                        <li>Discord</li>
-                                                        <li>Postman</li>
-                                                        <li>Command Prompt</li>
-                                                    </ul>  
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-8">
-                                            <div class="col-12 text-center">
-                                                <img src="images/discord/bot.jpg" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <hr />
-                                    <div class="row mb-2">
-                                        <div class="col-12">
-                                            <h3>DRAWING CANVAS</h3>
-                                        </div>
-                                        <div class="col-12">
-                                            <p>From here, things get a lot more … technical. I started learning about Node.js and decided to create a Discord bot. This bot will be used within my discord server by any of my users in attempt to obtain information related to their profile. I started off by drawing a canvas. This canvas will hold any user information on it, such as their username, the date in which they joined the server, picture and avatar. I also implemented a fun leveling system!</p>
-                                        </div>
-                                        <div class="col-xl-6 mb-2 text-center">
-                                            <img src="images/discord/canvas.png" />
-                                        </div>
-                                        <div class="col-xl-6 mb-2 text-center">
-                                            <img src="images/discord/canvas2.png" />
-                                        </div>
-                                    </div>
-                                    <hr />
-                                    <div class="row">
-                                        <div class="col-xl-6">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <h3>OTHER DETAILS</h3>
-                                                </div>
-                                                <div class="col-12">
-                                                    <p>As I mentioned earlier, I've included pretty cool features into my bot, most notably the leveling system. You'll notice the red bar drawn on the canvas in the image below. You'll also see my current level as well. Other features I've included are badges, which would periodically be assigned based on special events or moments within the server.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6">
-                                            <div class="col-12 text-center">
-                                                <img src="images/discord/canvas3.png" />
-                                            </div>
-                                        </div>
+                                    <div class="col text-end">
+                                        <a href="#nav"><i class="bi bi-arrow-up-square-fill bi-icon-attr"></i></a>
                                     </div>
                                 </div>
                             </div>
-                            <div id="ViewAdobe" ng-hide="IsViewAdobeOff" class="content-container">
-                                <div class="header">
+                            <div class="content">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h3>ABOUT</h3>
+                                    </div>
+                                    <div class="col-12">
+                                        <p>Originally starting off with Sony Vegas, I experimented and started studying video editing. Eventually, I started using a free video editor called DaVinci Resolve. This is the MAIN tool that I currently use for my YouTube channel, which helps me with creating videos, small clips and highlights.</p>
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="row">
                                     <div class="row">
-                                        <div class="col">
-                                            <h2>ADOBE AFTER EFFECTS & PHOTOSHOP</h2>
+                                        <div class="col-12">
+                                            <h3>DEVELOPER TOOLS</h3>
                                         </div>
-                                        <div class="col text-end">
-                                            <a href="#nav"><i class="bi bi-arrow-up-square-fill bi-icon-attr"></i></a>
+                                        <div class="col-12">
+                                            <ul>
+                                                <li>Sony Vegas</li>
+                                                <li>DaVinci Resolve</li>
+                                            </ul>  
                                         </div>
                                     </div>
                                 </div>
-                                <div class="content">            
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <h3>ABOUT</h3>
-                                        </div>
-                                        <div class="col-12">
-                                            <p>I have recently been working on developing artwork using Adobe Photoshop and After Effects to learn more about Adobe products. This range from static images to animated ones, particularly for my YouTube and Twitch streaming channels.</p>
-                                        </div>
+                                <div class="row">
+                                    <div class="col-xl-6 mb-2">
+                                        <img src="images/davinci/davinci1.jpg" />
                                     </div>
-                                    <hr />
-                                    <div class="row">
+                                    <div class="col-xl-6 mb-2">
+                                        <img src="images/davinci/davinci2.jpg" />
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h3>YOUTUBE</h3>
+                                    </div>
+                                    <div class="col-12">
+                                        <p>Once I have created my video, I would then create a thumbnail for the video and upload the content onto my YouTube channel.</p>
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        <img src="images/davinci/yt.jpg" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="ViewCagenix" ng-hide="IsViewCagenixOff" class="content-container">
+                            <div class="header">
+                                <div class="row">
+                                    <div class="col">
+                                        <h2>CAGENIX, INC</h2>
+                                    </div>
+                                    <div class="col text-end">
+                                        <a href="#nav"><i class="bi bi-arrow-up-square-fill bi-icon-attr"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="row mb-2">
+                                    <div class="col-12">
+                                        <h3>ABOUT</h3>
+                                    </div>
+                                    <div class="col-12">
+                                        <p>The main focus at Cagenix is on dental work. Professionally, I worked closely with them on their main website, and their backend website as well.</p>
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="row mb-2">
+                                    <div class="col-xl-4">
                                         <div class="row">
                                             <div class="col-12">
                                                 <h3>DEVELOPER TOOLS</h3>
                                             </div>
                                             <div class="col-12">
                                                 <ul>
-                                                    <li>Adobe Photoshop</li>
-                                                    <li>Adobe After Effects</li>
-                                                    <li>Paint.Net</li>
+                                                    <li>Visual Studio</li>
+                                                    <li>Microsoft SQL Server Management Studio</li>
+                                                    <li>.NET C#</li>
+                                                    <li>Bootstrap</li>
+                                                    <li>HTML</li>
+                                                    <li>CSS</li>
+                                                    <li>Javascript</li>
+                                                    <li>Google Chrome</li>
+                                                    <li>Google Debugger</li>
                                                 </ul>  
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-xl-6 mb-2 text-center">
-                                            <img src="images/adobe/photoshop.png" />
-                                        </div>
-                                        <div class="col-xl-6 mb-2 text-center">
-                                            <img src="images/adobe/aftereffects.png" />
+                                    <div class="col-xl-8">
+                                        <div class="col-12 text-end">
+                                            <img src="images/cagenix/cagenix1.jpg" />
                                         </div>
                                     </div>
-                                    <hr />
-                                    <div class="row">
-                                        <div class="col-xl-6 mb-2">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <h3>AFTER EFFECTS</h3>
-                                                </div>
-                                                <div class="col-12">
-                                                    <p>Majority of my animations are done through After Effects! I create overlays for my Twitch and YouTube streaming channels to bring customization to my content.</p>
-                                                </div>
-                                                <div class="col-md-6 mb-2 text-center">
-                                                    <img src="images/adobe/christmas2025.gif" />
-                                                </div>
-                                                <div class="col-md-6 mb-2 text-center">
-                                                    <img src="images/adobe/winter2026.gif" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <h3>PHOTOSHOP</h3>
-                                                </div>
-                                                <div class="col-12">
-                                                    <p>I create various thumbnails and other images through Photoshop. My thumbnails are mostly used on my YouTube channel.</p>
-                                                </div>
-                                                <div class="col-12">
-                                                    <img src="images/adobe/thumbnail.jpg" />
-                                                </div>
-                                            </div>
-                                        </div>
+                                </div>
+                                <hr />
+                                <div class="row mb-2">
+                                    <div class="col-12">
+                                        <h3>RESOURCE MANAGEMENT</h3>
+                                    </div>
+                                    <div class="col-12">
+                                        <p>The main concern with this website were issues with performance. This included assets and fonts that may have been taking quite a while to load onto a specific page, which is very concerning, especially for our mobile users. As a result, I was tasked with working on various existing pages and making sure content was loading appropriately.</p>
+                                        <p>I utilized the Google Debugger to aid in this task. Using the Network tab, I was able to check to see which assets were loading into a view, but also check to see how long it would take AND also file sizes.</p>
+                                        <p>Any JavaScript or console errors, I would also address as well.</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xl-6 mb-2">
+                                        <img src="images/cagenix/cagenix2.jpg" />
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <img src="images/cagenix/cagenix3.jpg" />
                                     </div>
                                 </div>
                             </div>
-                            <div id="ViewVideoEditing" ng-hide="IsViewVideoEditingOff" class="content-container">
-                                <div class="header">
-                                    <div class="row">
-                                        <div class="col">
-                                            <h2>VIDEO EDITING</h2>
-                                        </div>
-                                        <div class="col text-end">
-                                            <a href="#nav"><i class="bi bi-arrow-up-square-fill bi-icon-attr"></i></a>
-                                        </div>
+                        </div>
+                        <div id="ViewGLSA" ng-hide="IsViewGLSAOff" class="content-container">
+                            <div class="header">
+                                <div class="row">
+                                    <div class="col">
+                                        <h2>GLSA WEBSITE</h2>
+                                    </div>
+                                    <div class="col text-end">
+                                        <a href="#nav"><i class="bi bi-arrow-up-square-fill bi-icon-attr"></i></a>
                                     </div>
                                 </div>
-                                <div class="content">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <h3>ABOUT</h3>
-                                        </div>
-                                        <div class="col-12">
-                                            <p>Originally starting off with Sony Vegas, I experimented and started studying video editing. Eventually, I started using a free video editor called DaVinci Resolve. This is the MAIN tool that I currently use for my YouTube channel, which helps me with creating videos, small clips and highlights.</p>
-                                        </div>
+                            </div>
+                            <div class="content">
+                                <div class="row mb-2">
+                                    <div class="col-12">
+                                        <h3>ABOUT</h3>
                                     </div>
-                                    <hr />
-                                    <div class="row">
+                                    <div class="col-12">
+                                        <p>This is one of the very first web development projects I worked on in college! My love for XML started with the SPSU GLSA project. This project is a small web application that is designed for the GLSA at SPSU to provide information regarding general updates and events with the club. They helped me host the website on their servers, and I would periodically provide updates.</p>
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="row mb-2">
+                                            <div class="col-12">
+                                                <h3>DEVELOPER TOOLS</h3>
+                                            </div>
+                                            <div class="col-12">
+                                                <ul>
+                                                    <li>HTML</li>
+                                                    <li>CSS</li>
+                                                    <li>Javascript</li>
+                                                    <li>XML</li>
+                                                    <li>Notepad++</li>
+                                                    <li>Facebook Debugger (For creating a LIKE button)</li>
+                                                </ul>  
+                                            </div>
+                                        </div>
+                                <div class="row mb-2">
+                                    <div class="col-xl-6 mb-2">
+                                        <img src="images/glsa/glsa1.jpg" />
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <img src="images/glsa/glsa2.jpg" />
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h3>HOW IT WORKS</h3>
+                                    </div>
+                                    <div class="col-12">
+                                        <p>The crazy cool thing about this website is that it is where I started learning and utilizing XML and JQUERY. The cooler part comes when I use JavaScript to READ this XML document. Once the XML document is opened, the entries are read and from there it spits out HTML that creates the entries on the main page.</p>
+                                        <p>For example, this is the “About” section. I created an XML document that holds each entry, and then using JavaScript, I read the document. As each entry is read, HTML is appended and saved into a variable. Once the entries are all read, the HTML is then created on the web page itself.</p>
+                                        <p>This application is very simple, but effective in that I didn’t have a database system to work with, so I figured I’d use XML instead. The site also used JQUERY for a few animations, such as showing and hiding certain elements, as you can see from the screenshots provided.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="ViewTheNew" ng-hide="IsViewTheNewOff" class="content-container">
+                            <div class="header">
+                                <div class="row">
+                                    <div class="col">
+                                        <h2>The New</h2>
+                                    </div>
+                                    <div class="col text-end">
+                                        <a href="#nav"><i class="bi bi-arrow-up-square-fill bi-icon-attr"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="row mb-2">
+                                    <div class="col-12">
+                                        <h3>ABOUT</h3>
+                                    </div>
+                                    <div class="col-12">
+                                        <p>This is the <b>VERY FIRST</b> web development project I've <b>EVER</b> worked on. The New is my baby. The primary focus behind this website was to design a message board system where users could interact with each other.</p>
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="row mb-2">
+                                    <div class="col-xl-4">
                                         <div class="row">
                                             <div class="col-12">
                                                 <h3>DEVELOPER TOOLS</h3>
                                             </div>
                                             <div class="col-12">
                                                 <ul>
-                                                    <li>Sony Vegas</li>
-                                                    <li>DaVinci Resolve</li>
+                                                    <li>HTML</li>
+                                                    <li>CSS</li>
+                                                    <li>Javascript</li>
+                                                    <li>PHP</li>
+                                                    <li>Notepad++</li>
+                                                    <li>Wampserver</li>
+                                                    <li>phpMyAdmin</li>
+                                                    <li>MySQL</li>
                                                 </ul>  
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-xl-6 mb-2">
-                                            <img src="images/davinci/davinci1.jpg" />
-                                        </div>
-                                        <div class="col-xl-6 mb-2">
-                                            <img src="images/davinci/davinci2.jpg" />
-                                        </div>
-                                    </div>
-                                    <hr />
-                                    <div class="row">
+                                    <div class="col-xl-8">
                                         <div class="col-12">
-                                            <h3>YOUTUBE</h3>
-                                        </div>
-                                        <div class="col-12">
-                                            <p>Once I have created my video, I would then create a thumbnail for the video and upload the content onto my YouTube channel.</p>
-                                        </div>
-                                        <div class="col-12 text-center">
-                                            <img src="images/davinci/yt.jpg" />
+                                            <img src="images/thenew/thenew.jpg" /> 
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div id="ViewCagenix" ng-hide="IsViewCagenixOff" class="content-container">
-                                <div class="header">
-                                    <div class="row">
-                                        <div class="col">
-                                            <h2>CAGENIX, INC</h2>
-                                        </div>
-                                        <div class="col text-end">
-                                            <a href="#nav"><i class="bi bi-arrow-up-square-fill bi-icon-attr"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    <div class="row mb-2">
-                                        <div class="col-12">
-                                            <h3>ABOUT</h3>
-                                        </div>
-                                        <div class="col-12">
-                                            <p>The main focus at Cagenix is on dental work. Professionally, I worked closely with them on their main website, and their backend website as well.</p>
-                                        </div>
-                                    </div>
-                                    <hr />
-                                    <div class="row mb-2">
-                                        <div class="col-xl-4">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <h3>DEVELOPER TOOLS</h3>
-                                                </div>
-                                                <div class="col-12">
-                                                    <ul>
-                                                        <li>Visual Studio</li>
-                                                        <li>Microsoft SQL Server Management Studio</li>
-                                                        <li>.NET C#</li>
-                                                        <li>Bootstrap</li>
-                                                        <li>HTML</li>
-                                                        <li>CSS</li>
-                                                        <li>Javascript</li>
-                                                        <li>Google Chrome</li>
-                                                        <li>Google Debugger</li>
-                                                    </ul>  
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-8">
-                                            <div class="col-12 text-end">
-                                                <img src="images/cagenix/cagenix1.jpg" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <hr />
-                                    <div class="row mb-2">
-                                        <div class="col-12">
-                                            <h3>RESOURCE MANAGEMENT</h3>
-                                        </div>
-                                        <div class="col-12">
-                                            <p>The main concern with this website were issues with performance. This included assets and fonts that may have been taking quite a while to load onto a specific page, which is very concerning, especially for our mobile users. As a result, I was tasked with working on various existing pages and making sure content was loading appropriately.</p>
-                                            <p>I utilized the Google Debugger to aid in this task. Using the Network tab, I was able to check to see which assets were loading into a view, but also check to see how long it would take AND also file sizes.</p>
-                                            <p>Any JavaScript or console errors, I would also address as well.</p>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-xl-6 mb-2">
-                                            <img src="images/cagenix/cagenix2.jpg" />
-                                        </div>
-                                        <div class="col-xl-6">
-                                            <img src="images/cagenix/cagenix3.jpg" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="ViewGLSA" ng-hide="IsViewGLSAOff" class="content-container">
-                                <div class="header">
-                                    <div class="row">
-                                        <div class="col">
-                                            <h2>GLSA WEBSITE</h2>
-                                        </div>
-                                        <div class="col text-end">
-                                            <a href="#nav"><i class="bi bi-arrow-up-square-fill bi-icon-attr"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    <div class="row mb-2">
-                                        <div class="col-12">
-                                            <h3>ABOUT</h3>
-                                        </div>
-                                        <div class="col-12">
-                                            <p>This is one of the very first web development projects I worked on in college! My love for XML started with the SPSU GLSA project. This project is a small web application that is designed for the GLSA at SPSU to provide information regarding general updates and events with the club. They helped me host the website on their servers, and I would periodically provide updates.</p>
-                                        </div>
-                                    </div>
-                                    <hr />
-                                    <div class="row mb-2">
-                                                <div class="col-12">
-                                                    <h3>DEVELOPER TOOLS</h3>
-                                                </div>
-                                                <div class="col-12">
-                                                    <ul>
-                                                        <li>HTML</li>
-                                                        <li>CSS</li>
-                                                        <li>Javascript</li>
-                                                        <li>XML</li>
-                                                        <li>Notepad++</li>
-                                                        <li>Facebook Debugger (For creating a LIKE button)</li>
-                                                    </ul>  
-                                                </div>
-                                            </div>
-                                    <div class="row mb-2">
-                                        <div class="col-xl-6 mb-2">
-                                            <img src="images/glsa/glsa1.jpg" />
-                                        </div>
-                                        <div class="col-xl-6">
-                                            <img src="images/glsa/glsa2.jpg" />
-                                        </div>
-                                    </div>
-                                    <hr />
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <h3>HOW IT WORKS</h3>
-                                        </div>
-                                        <div class="col-12">
-                                            <p>The crazy cool thing about this website is that it is where I started learning and utilizing XML and JQUERY. The cooler part comes when I use JavaScript to READ this XML document. Once the XML document is opened, the entries are read and from there it spits out HTML that creates the entries on the main page.</p>
-                                            <p>For example, this is the “About” section. I created an XML document that holds each entry, and then using JavaScript, I read the document. As each entry is read, HTML is appended and saved into a variable. Once the entries are all read, the HTML is then created on the web page itself.</p>
-                                            <p>This application is very simple, but effective in that I didn’t have a database system to work with, so I figured I’d use XML instead. The site also used JQUERY for a few animations, such as showing and hiding certain elements, as you can see from the screenshots provided.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="ViewTheNew" ng-hide="IsViewTheNewOff" class="content-container">
-                                <div class="header">
-                                    <div class="row">
-                                        <div class="col">
-                                            <h2>The New</h2>
-                                        </div>
-                                        <div class="col text-end">
-                                            <a href="#nav"><i class="bi bi-arrow-up-square-fill bi-icon-attr"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    <div class="row mb-2">
-                                        <div class="col-12">
-                                            <h3>ABOUT</h3>
-                                        </div>
-                                        <div class="col-12">
-                                            <p>This is the <b>VERY FIRST</b> web development project I've <b>EVER</b> worked on. The New is my baby. The primary focus behind this website was to design a message board system where users could interact with each other.</p>
-                                        </div>
-                                    </div>
-                                    <hr />
-                                    <div class="row mb-2">
-                                        <div class="col-xl-4">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <h3>DEVELOPER TOOLS</h3>
-                                                </div>
-                                                <div class="col-12">
-                                                    <ul>
-                                                        <li>HTML</li>
-                                                        <li>CSS</li>
-                                                        <li>Javascript</li>
-                                                        <li>PHP</li>
-                                                        <li>Notepad++</li>
-                                                        <li>Wampserver</li>
-                                                        <li>phpMyAdmin</li>
-                                                        <li>MySQL</li>
-                                                    </ul>  
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-8">
+                                <hr />
+                                <div class="row mb-2">
+                                    <div class="col-xl-4">
+                                        <div class="row">
                                             <div class="col-12">
-                                                <img src="images/thenew/thenew.jpg" /> 
+                                                <h3>WAMPSERVER</h3>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <hr />
-                                    <div class="row mb-2">
-                                        <div class="col-xl-4">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <h3>WAMPSERVER</h3>
-                                                </div>
-                                                <div class="col-12">
-                                                    <p>A server is needed in order to run this web application. I decided to use Wampserver, which comes with Apache, PHP and MySQL installed. This allows me to set up my database and website!</p> 
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-8">
                                             <div class="col-12">
-                                                <img src="images/thenew/wampserver.jpg" /> 
+                                                <p>A server is needed in order to run this web application. I decided to use Wampserver, which comes with Apache, PHP and MySQL installed. This allows me to set up my database and website!</p> 
                                             </div>
                                         </div>
                                     </div>
-                                    <hr />
-                                    <div class="row mb-2">
+                                    <div class="col-xl-8">
                                         <div class="col-12">
-                                            <h3>THE DATABASE</h3>
-                                        </div>
-                                        <div class="col-12">
-                                            <p>Once Wampserver is up and running, I can now design my database and have it run through phpMyAdmin. SQL database knowledge is heavily required, but you can also use the UI to create tables and entries as well. On the left is the database structure for my website, and on the right is the database entries for my forums.</p>
+                                            <img src="images/thenew/wampserver.jpg" /> 
                                         </div>
                                     </div>
-                                    <div class="row mb-2">
-                                        <div class="col-xl-6 mb-2">
-                                            <img src="images/thenew/phpmyadmin.jpg" />
-                                        </div>
-                                        <div class="col-xl-6">
-                                            <img src="images/thenew/phpmyadmin2.jpg" />
-                                        </div>
+                                </div>
+                                <hr />
+                                <div class="row mb-2">
+                                    <div class="col-12">
+                                        <h3>THE DATABASE</h3>
                                     </div>
-                                    <hr />
-                                    <div class="row mb-2">
-                                        <div class="col-xl-4">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <h3>REGISTRATION AND LOGIN</h3>
-                                                </div>
-                                                <div class="col-12">
-                                                    <p>Before guests are able to post information on the website, they are required to register and login. For registration, a username and password are required. Gender must also be specified as well. For login, username and password are required.</p> 
-                                                </div>
+                                    <div class="col-12">
+                                        <p>Once Wampserver is up and running, I can now design my database and have it run through phpMyAdmin. SQL database knowledge is heavily required, but you can also use the UI to create tables and entries as well. On the left is the database structure for my website, and on the right is the database entries for my forums.</p>
+                                    </div>
+                                </div>
+                                <div class="row mb-2">
+                                    <div class="col-xl-6 mb-2">
+                                        <img src="images/thenew/phpmyadmin.jpg" />
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <img src="images/thenew/phpmyadmin2.jpg" />
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="row mb-2">
+                                    <div class="col-xl-4">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h3>REGISTRATION AND LOGIN</h3>
                                             </div>
-                                        </div>
-                                        <div class="col-xl-8">
-                                            <div class="row">
-                                                <div class="col-xl-6 mb-2">
-                                                    <img src="images/thenew/thenew4.jpg" /> 
-                                                </div>
-                                                <div class="col-xl-6">
-                                                    <img src="images/thenew/thenew5.jpg" /> 
-                                                </div>
+                                            <div class="col-12">
+                                                <p>Before guests are able to post information on the website, they are required to register and login. For registration, a username and password are required. Gender must also be specified as well. For login, username and password are required.</p> 
                                             </div>
                                         </div>
                                     </div>
-                                    <hr />
-                                    <div class="row">
-                                        <div class="col-xl-6 mb-2">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <h3>MEMBERS</h3>
-                                                </div>
-                                                <div class="col-12">
-                                                    <p>Any registered members on the website are listed in its own page, which features page navigation! The color codes on each name have a meaning, indicating if they're a member, or a server moderator, or a server admin.</p>
-                                                </div>
-                                                <div class="col-12">
-                                                    <figure class="figure">
-                                                        <img src="images/thenew/thenew2.jpg" class="figure-img img-fluid rounded" alt="Member List">
-                                                        <figcaption class="figure-caption">This is a list of members.</figcaption>
-                                                    </figure>
-                                                </div>
+                                    <div class="col-xl-8">
+                                        <div class="row">
+                                            <div class="col-xl-6 mb-2">
+                                                <img src="images/thenew/thenew4.jpg" /> 
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <img src="images/thenew/thenew5.jpg" /> 
                                             </div>
                                         </div>
-                                        <div class="col-xl-6">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <h3>MEMBER DETAILS</h3>
-                                                </div>
-                                                <div class="col-12">
-                                                    <p>From the member list, you can view specific details about server members as well, such as their profile picture, post layouts, number of posts and threads, email and other goodies!</p>
-                                                </div>
-                                                <div class="col-12">
-                                                    <img src="images/thenew/thenew3.jpg" />
-                                                </div>
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="row">
+                                    <div class="col-xl-6 mb-2">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h3>MEMBERS</h3>
+                                            </div>
+                                            <div class="col-12">
+                                                <p>Any registered members on the website are listed in its own page, which features page navigation! The color codes on each name have a meaning, indicating if they're a member, or a server moderator, or a server admin.</p>
+                                            </div>
+                                            <div class="col-12">
+                                                <figure class="figure">
+                                                    <img src="images/thenew/thenew2.jpg" class="figure-img img-fluid rounded" alt="Member List">
+                                                    <figcaption class="figure-caption">This is a list of members.</figcaption>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h3>MEMBER DETAILS</h3>
+                                            </div>
+                                            <div class="col-12">
+                                                <p>From the member list, you can view specific details about server members as well, such as their profile picture, post layouts, number of posts and threads, email and other goodies!</p>
+                                            </div>
+                                            <div class="col-12">
+                                                <img src="images/thenew/thenew3.jpg" />
                                             </div>
                                         </div>
                                     </div>
@@ -686,58 +685,57 @@
                             </div>
                         </div>
                     </div>
-                    <!--<div class="row">
-                        <div class="col">
-                            <div class="content-container">
-                                <div class="header">The Chart</div>
-                                <div class="content">
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <canvas id="chartOne"></canvas>
-                                        </div>
-                                        <div class="col-6">
-                                            <canvas id="chartTwo"></canvas>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>-->
                 </div>
-            </main>
-            <footer class="border-top footer text-muted" style="margin-top: 2.5rem;">
-                <div class="container-fluid">
-                    <div class="row">
-                            <div class="col-12 text-center">
-                                            <a href="#nav"><i class="bi bi-arrow-up-square-fill" style="font-size: 2.5rem; color: var(--bs-body-color);"></i></a>
-                                        </div>
-                    </div>
-                    <div style="height: 10rem;"></div>
-                    <div class="row text-center">
-                        <div class="col-md-4 offset-md-8">
-                            <div class="row">
-                                <div class="col">
-                                    <a href="{{TwitchLink}}" target="_blank" style="font-size: 2.5rem; color: var(--bs-purple);"><i class="bi bi-twitch"></i></a>
-                                </div>
-                                <div class="col">
-                                    <a href="{{YouTubeLink}}" target="_blank" style="font-size: 2.5rem; color: var(--bs-red);"><i class="bi bi-youtube"></i></a>
-                                </div>
-                                <div class="col">
-                                    <a href="{{TwitterLink}}" target="_blank" style="font-size: 2.5rem; color: var(--bs-cyan);"><i class="bi bi-twitter"></i></a>
-                                </div>
-                                <div class="col">
-                                    <a href="{{InstagramLink}}" target="_blank" style="font-size: 2.5rem; color: var(--bs-pink);"><i class="bi bi-instagram"></i></a>
-                                </div>
-                                <div class="col">
-                                    <a href="{{TikTokLink}}" target="_blank" style="font-size: 2.5rem; color: var(--bs-black);"><i class="bi bi-tiktok"></i></a>
+                <!--<div class="row">
+                    <div class="col">
+                        <div class="content-container">
+                            <div class="header">The Chart</div>
+                            <div class="content">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <canvas id="chartOne"></canvas>
+                                    </div>
+                                    <div class="col-6">
+                                        <canvas id="chartTwo"></canvas>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div style="height: 10rem;"></div>
+                </div>-->
+            </div>
+        </main>
+        <footer class="border-top footer text-muted" style="margin-top: 2.5rem;">
+            <div class="container-fluid" style="gap: 5rem; display: grid;">
+                <div class="mt-1"></div>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <a href="#nav"><i class="bi bi-arrow-up-square-fill" style="font-size: 2.5rem; color: var(--bs-body-color);"></i></a>
+                    </div>
                 </div>
-            </footer>
-        </div>
+                <div class="row text-center">
+                    <div class="col">
+                        <div class="row d-inline-flex">
+                            <div class="col">
+                                <a href="{{TwitchLink}}" target="_blank" style="font-size: 2.5rem; color: var(--bs-purple);"><i class="bi bi-twitch"></i></a>
+                            </div>
+                            <div class="col">
+                                <a href="{{YouTubeLink}}" target="_blank" style="font-size: 2.5rem; color: var(--bs-red);"><i class="bi bi-youtube"></i></a>
+                            </div>
+                            <div class="col">
+                                <a href="{{TwitterLink}}" target="_blank" style="font-size: 2.5rem; color: var(--bs-cyan);"><i class="bi bi-twitter"></i></a>
+                            </div>
+                            <div class="col">
+                                <a href="{{InstagramLink}}" target="_blank" style="font-size: 2.5rem; color: var(--bs-pink);"><i class="bi bi-instagram"></i></a>
+                            </div>
+                            <div class="col">
+                                <a href="{{TikTokLink}}" target="_blank" style="font-size: 2.5rem; color: var(--bs-black);"><i class="bi bi-tiktok"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
     <!--<script>
         const ctx = document.getElementById('chartOne');
