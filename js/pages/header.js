@@ -6,6 +6,7 @@
         Portfolio.HeaderScope.TwitchLink = "https://www.twitch.tv/chrissilence";
         Portfolio.HeaderScope.TwitterLink = "https://x.com/ChrisSilenceTV";
         Portfolio.HeaderScope.InstagramLink = "https://www.instagram.com/chrissilencetv";
+        Portfolio.HeaderScope.TikTokLink = "https://www.tiktok.com/@chrissilencetv";
 
         // VIEW VARIABLES
 
